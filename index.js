@@ -89,7 +89,11 @@ function evaluateExpect(metrics, expect) {
   } else {
     message = `不达标:${metric}=${value},要求 ${req},超出 ${value - max}`;
   }
-  return { metric, min, max, value, pass, message };
+  // 只保留实际给出的边界:值为 undefined 的键会破坏宿主的无损 JSON 校验
+  const judgement = { metric, value, pass, message };
+  if (min !== undefined) judgement.min = min;
+  if (max !== undefined) judgement.max = max;
+  return judgement;
 }
 
 export const inject = ['tools'];

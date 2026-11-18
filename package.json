@@ -1,6 +1,6 @@
 {
   "name": "dsh-text-count",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSH 字数统计工具：中文按字、西文按词，另给标点/字符/字素/行数与 UTF-8 字节，并可用 min/max 区间判定是否达标。",
   "type": "module",
   "license": "MIT",
