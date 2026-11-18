@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "字数检查",
+    "description": "为 AI 提供确定性的字数/字符数/标点统计与 min/max 达标判定工具(count_text),交付前核验「不少于 N 字」等写作要求。"
+  }
+}

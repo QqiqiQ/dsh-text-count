@@ -1,0 +1,50 @@
+{
+  "name": "dsh-text-count",
+  "version": "1.0.0",
+  "description": "DSH 字数统计工具：中文按字、西文按词，另给标点/字符/字素/行数与 UTF-8 字节，并可用 min/max 区间判定是否达标。",
+  "type": "module",
+  "license": "MIT",
+  "author": "QqiqiQ",
+  "homepage": "https://github.com/QqiqiQ/dsh-text-count#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QqiqiQ/dsh-text-count.git"
+  },
+  "bugs": {
+    "url": "https://github.com/QqiqiQ/dsh-text-count/issues"
+  },
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "text",
+    "word-count",
+    "cjk",
+    "character-count"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "icon.png",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.mjs",
+    "check": "node --check index.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

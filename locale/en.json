@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Text Count",
+    "description": "Gives the AI a deterministic word/character/punctuation counting tool (count_text) with min/max pass-fail checks, for verifying length requirements before delivering text."
+  }
+}

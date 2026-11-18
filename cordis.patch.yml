@@ -1,0 +1,4 @@
+- insert:
+    - id: text-count
+      name: 'dsh-text-count'
+      config: {}
