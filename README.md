@@ -63,6 +63,12 @@
 dsh plugin --profile web add "https://github.com/QqiqiQ/dsh-text-count/releases/latest/download/dsh-text-count.tgz"
 ```
 
+同样的文件也发布在 npm 上，包名 `dsh-text-count`（市场安装走的仍是 Release 里的 tarball，npm 只是第二个取包源）：
+
+```powershell
+dsh plugin --profile web add dsh-text-count
+```
+
 要改代码就跑 checkout：
 
 ```powershell
